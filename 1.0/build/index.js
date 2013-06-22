@@ -1,9 +1,15 @@
+/*
+combined files : 
+
+gallery/iToolTip/1.0/index
+
+*/
 ﻿/**
  * @fileoverview 为图片添加图钉说明
  * @author Letao<mailzwj@126.com>
  * @module iToolTip
  **/
-KISSY.add(function (S, Node,Base) {
+KISSY.add('gallery/iToolTip/1.0/index',function (S, Node,Base) {
     var EMPTY = '';
     var $ = Node.all, D = S.DOM, E = S.Event;
     /**
@@ -79,6 +85,7 @@ KISSY.add(function (S, Node,Base) {
     }});
     return IToolTip;
 }, {requires:['node', 'base']});
+
 
 
 
