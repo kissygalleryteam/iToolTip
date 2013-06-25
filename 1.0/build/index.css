@@ -1,0 +1,45 @@
+.J_Itts {
+	position: absolute;
+	z-index: 10;
+	padding: 3px;
+	width: 24px;
+	background-color: rgba(0, 0, 0, 0.6);
+	background-color: #666\9;
+	border-radius: 15px;
+	font:12px/1.5 tahoma, "microsoft yahei", "\5FAE\8F6F\96C5\9ED1", sans-serif;
+	overflow: hidden;
+}
+
+.J_Itts .thumbtack {
+	position: absolute;
+	left: 3px;
+	top: 3px;
+	z-index: 9;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 24px;
+	height: 24px;
+	background: url(http://img02.taobaocdn.com/tps/i2/T1ts8oFkdbXXa1YfHb-24-24.png) no-repeat center center;
+}
+
+.J_Itts .itt-title {
+	padding-left: 30px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+}
+
+.J_Itts .itt-title {
+	width: 195px;
+}
+
+.J_Itts .itt-body {
+	display: none;
+	padding: 5px;
+	width: 209px;
+	color: #fff;
+}
