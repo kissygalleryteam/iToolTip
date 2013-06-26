@@ -1,12 +1,11 @@
-## 综述
+## iToolTip
 
-## 快速使用
+* 版本：1.0
+* 教程：[http://gallery.kissyui.com/iToolTip/1.0/guide/index.html](http://gallery.kissyui.com/iToolTip/1.0/guide/index.html)
+* demo：[http://gallery.kissyui.com/iToolTip/1.0/demo/index.html](http://gallery.kissyui.com/iToolTip/1.0/demo/index.html)
 
-### 初始化组件
+## changelog
 
-    S.use('gallery/iToolTip/1.0/index', function (S, IToolTip) {
-         var iToolTip = new IToolTip();
-    })
+### V1.0
 
-## API说明
 
