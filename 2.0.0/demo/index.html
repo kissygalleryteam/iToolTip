@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>祖国大江南北</title>
+    <script src="http://a.tbcdn.cn/s/kissy/1.3.0/kissy-min.js" charset="utf-8"></script>
+    <style>
+    * {margin: 0;padding: 0;}
+    .map {margin: 0 auto;position: relative;width: 990px;}
+    .map .beijing {left: 660px;top: 290px;}
+    .map .shanghai {left: 750px;top: 495px;}
+    .map .chongqing {left: 500px;top: 548px;}
+    </style>
+</head>
+<body>
+<h2>祖国大江南北</h2>
+<div class="map">
+    <img src="http://img04.taobaocdn.com/tps/i4/T1YVtmFaFdXXbZRDPh-990-848.png" width="990" height="848">
+    <div class="J_Itts beijing">
+        <div class="J_Itts_main">
+            <h3 class="itt-title">北京</h3>
+            <div class="itt-body">
+                北京，中国的首都。一个充满人文气息的大都市。
+            </div>
+        </div>
+        <i class="thumbtack"></i>
+    </div>
+    <div class="J_Itts shanghai">
+        <h3 class="itt-title">上海</h3>
+        <i class="thumbtack"></i>
+    </div>
+    <div class="J_Itts chongqing">
+        <h3 class="itt-title">重庆</h3>
+        <i class="thumbtack"></i>
+    </div>
+</div>
+<script>
+    var S = KISSY;
+    S.config({
+        packages:[
+            {
+                name:"kg",
+                path:"http://g.tbcdn.cn/kg/",
+                charset:"utf-8",
+                ignorePackageNameInUri:true
+            }
+        ]
+    });
+
+    if (S.Config.debug) {
+        var srcPath = "../";
+        S.config({
+            packages:[
+                {
+                    name:"kg/iToolTip/2.0.0",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+
+    S.use('kg/iToolTip/2.0.0/index,kg/iToolTip/2.0.0/index.css', function (S, IToolTip) {
+         var iToolTip = new IToolTip({
+            thumbtack: ".J_Itts",
+            expandWidth: 219
+         });
+    })
+</script>
+</body>
+</html>
